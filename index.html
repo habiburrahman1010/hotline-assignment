@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- daisy ui cdn -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome cdn--------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-    
+
+    <header class="bg-white">
+        <!-- --------------nav bar section---------------- -->
+        <nav class="flex h-[60px] justify-between mx-1 md:mx-[50px] md:p-2 ">
+            <div class="flex items-center gap-1">
+                <img class="w-[50px] h-[50px]" src="assets/logo.png" alt="">
+                <h3 class="text-[#006747] font-extrabold">Emergency <br> Service</h3>
+            </div>
+
+            <div class="flex items-center gap-1 md:gap-4 ">
+                <div class="flex bg-[#41ff6b1a] rounded-4xl md:w-[90px] h-[44px] p-2 items-center justify-center gap-2">
+                    <p class="font-bold">0</p>
+                    <img class="w-[30px] h-[30px]" src="assets/heart.png" alt="">
+                </div>
+
+                <div class="flex bg-[#41ff6b1a] rounded-4xl md:w-[90px] h-[44px] p-2 items-center justify-center gap-2">
+                    <p class="font-bold">100</p>
+                    <img class="w-[30px] h-[30px]" src="assets/coin.png" alt="">
+                </div>
+                <div class="bg-[#00A63E] p-2 text-white rounded-4xl md:w-[90px] h-[44px] items-center justify-center">
+                    <p class="text-center ">2 copy</p>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- banner section--------------- -->
+
+        <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-center p-3">
+            <img class="w-[90px] h-[90px] mx-auto" src="assets/logo.png" alt="">
+            <h2 class="text-white font-bold text-2xl mt-3">Emergency Service Directory</h2>
+            <p class="text-white font-semibold mt-3">Government Emergency Services at Your Fingertip – A Project by
+                Government of the People’s Republic of Bangladesh</p>
+        </div>
+    </header>
+
+
+
 </body>
+
 </html>
