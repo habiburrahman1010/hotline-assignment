@@ -42,7 +42,7 @@ document.getElementById('call-btn-1').addEventListener('click', function () {
 
     const clearHistory = document.getElementById('clear-history')
 
-    clearHistory.addEventListener('click', function() {
+    clearHistory.addEventListener('click', function () {
         historyList.innerHTML = '';
     })
 
@@ -90,7 +90,7 @@ document.getElementById('call-btn-2').addEventListener('click', function () {
 
     const clearHistory = document.getElementById('clear-history')
 
-    clearHistory.addEventListener('click', function() {
+    clearHistory.addEventListener('click', function () {
         historyList.innerHTML = '';
     })
 
@@ -137,7 +137,7 @@ document.getElementById('call-btn-3').addEventListener('click', function () {
 
     const clearHistory = document.getElementById('clear-history')
 
-    clearHistory.addEventListener('click', function() {
+    clearHistory.addEventListener('click', function () {
         historyList.innerHTML = '';
     })
 
@@ -186,7 +186,7 @@ document.getElementById('call-btn-4').addEventListener('click', function () {
 
     const clearHistory = document.getElementById('clear-history')
 
-    clearHistory.addEventListener('click', function() {
+    clearHistory.addEventListener('click', function () {
         historyList.innerHTML = '';
     })
 
@@ -234,7 +234,7 @@ document.getElementById('call-btn-5').addEventListener('click', function () {
 
     const clearHistory = document.getElementById('clear-history')
 
-    clearHistory.addEventListener('click', function() {
+    clearHistory.addEventListener('click', function () {
         historyList.innerHTML = '';
     })
 
@@ -282,7 +282,7 @@ document.getElementById('call-btn-6').addEventListener('click', function () {
 
     const clearHistory = document.getElementById('clear-history')
 
-    clearHistory.addEventListener('click', function() {
+    clearHistory.addEventListener('click', function () {
         historyList.innerHTML = '';
     })
 
@@ -294,3 +294,39 @@ document.getElementById('call-btn-6').addEventListener('click', function () {
 
 // heart butto functionality
 
+const heartCount = document.getElementById('heart-count')
+let heartCountNumber = parseInt(heartCount.innerText)
+
+const heartButton = document.getElementsByClassName('heart-btn')
+
+for (const btn of heartButton) {
+    btn.addEventListener('click', function () {
+
+        heartCountNumber = heartCountNumber + 1
+        heartCount.innerText = heartCountNumber
+    })
+}
+
+
+
+
+// copy btn functionality---------------------------
+
+//copy btn 1----------------
+
+const copyCount = document.getElementById('copy-count');
+let copyCountNumber = parseInt(copyCount.innerText)
+
+const copyButton = document.getElementsByClassName('copy-btn');
+for (const btn of copyButton) {
+    btn.addEventListener('click', function () {
+        const card = btn.closest('.card');
+        const number = card.querySelector('h3').innerText;
+
+        navigator.clipboard.writeText(number);
+        copyCountNumber = copyCountNumber + 1
+        copyCount.innerText = copyCountNumber;
+
+        alert("Copied number: " + number);
+    });
+}
