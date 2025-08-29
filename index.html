@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="flex bg-[#41ff6b1a] rounded-4xl md:w-[90px] h-[44px] p-2 items-center justify-center gap-2">
-                    <p class="font-bold">100</p>
+                    <p id="coin" class="font-bold">100</p>
                     <img class="w-[30px] h-[30px]" src="assets/coin.png" alt="">
                 </div>
                 <div
@@ -85,7 +85,7 @@
                     <button class="btn flex-1  rounded-lg text-[#5C5C5C]"> <i
                             class="fa-regular fa-copy"></i>Copy</button>
 
-                    <button class="btn flex-1 rounded-lg mr-1 bg-[#00A63E] text-white "><i
+                    <button id="call-btn-1" class="btn flex-1 rounded-lg mr-1 bg-[#00A63E] text-white "><i
                             class="fa-solid fa-phone"></i>Call</button>
                 </div>
 
@@ -109,7 +109,7 @@
                     <button class="btn flex-1  rounded-lg text-[#5C5C5C]"> <i
                             class="fa-regular fa-copy"></i>Copy</button>
 
-                    <button id="call-btn-1" class="btn flex-1 rounded-lg mr-1 bg-[#00A63E] text-white "><i
+                    <button id="" class="btn flex-1 rounded-lg mr-1 bg-[#00A63E] text-white "><i
                             class="fa-solid fa-phone"></i>Call</button>
                 </div>
 
@@ -222,14 +222,25 @@
         </div>
 
              <div class="card   p-4 bg-white   shadow-[0_2px_2px_0_#D4D6D5] flex-[1]">
-               <div class="flex justify-between">
+               <div>
+                <div class="flex justify-between">
                  <div class="flex">
                     <span><i class="fa-solid fa-clock-rotate-left"></i></span>
                     <h3 class="text-sm">Call History</h3>
                 </div>
 
-                <button class="bg-[#00A63E] rounded-xl w-[55px] text-white ">Clear</button>
+                <button id="clear-history" class="bg-[#00A63E] rounded-xl w-[55px] text-white ">Clear</button>
+
             </div>
+
+
+               </div>
+
+               <div id="history-list">
+                
+               </div>
+
+
 
             </div>
 
